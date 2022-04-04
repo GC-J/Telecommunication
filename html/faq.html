@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <style>
+        body {
+            background-image: url('../images/server_black.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foire à questions  - Astuces de Josh</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+<header class="top-bar">
+<div class="header">
+    <a href="../index.html" class="logo">Astuces de Joshua</a>
+    <div class="header-right">
+        <a id="accueil" href="../index.html">Accueil</a>
+        <a href="./content_1.html">Exigences</a>
+        <a href="./content_2.html">Hiérarchie</a>
+        <a href="./content_3.html">Virtualisation</a>
+        <a href="./content_4.html">Transformation</a>
+    </div>
+</div>
+</header>
+
+<h1 id="faq_h1">FAQ (Foire à questions)</h1>
+
+<main id="faq_main">
+    <button class="faq">
+        Un datacenter, qu'est-ce que c'est?
+    </button>
+    <div class="faq_reponse">
+        <p>Un datacenter (ou un centre de données) est un ensemble de périphériques et de matériel 
+            informatique qui se composent le plus souvent de matériel de stockage (disques durs), des 
+            commutateurs et des périphériques réseau.
+        </p>
+    </div>
+
+<br> <!--1-->
+
+    <button class="faq">
+        Quelle est l'utilité d'un datacenter?
+    </button>
+    <div class="faq_reponse">
+        <p>Les datacenter sont plus souvent utilisés par les entreprises qui ont besoin de stocker 
+            des informations sensibles et/ou fréquemment utilisées par les employés. Les informations 
+            peuvent être stockées autant par précaution que par utilité; beaucoup de données ne sont 
+            pas locales, c'est-à-dire qu'elles sont ailleurs que dans l'ordinateur qui est présentement 
+            en fonction.
+        </p>
+    </div> 
+
+<br> <!--2-->
+
+    <button class="faq">
+        Est-ce que mes données sont sécures dans le datacenter?
+    </button>
+    <div class="faq_reponse">
+        <p>Oui! Dans les emplacements physiques où les datacenters résident, il y a beaucoup de mesures 
+            mises en place pour protèger vos données. Il y a des pare-feu, des antivirus et d'autres 
+            fonctions qui préviennent des attaques venant de l'extérieur.
+        </p>
+    </div> 
+    
+<br> <!--3-->
+
+    <button class="faq">
+        Est-ce qu'il y a des mesures de restoration de données?
+    </button>
+    <div class="faq_reponse">
+        <p>En temps normal, tout datacenter ont des bandes magnétiques qui servent de "backup". Les 
+            données étant habituellement stockées en RAID, des problèmes peuvent s'y produire quand même. 
+            Dans le cas échéant, les bandes magnétiques trouvent leur utilité et permettent aux datacenters 
+            de retrouver leur fonction rapidement.
+        </p>
+    </div> 
+
+<br> <!--4-->
+
+    <button class="faq">
+        Qui peut utiliser un datacenter? Est-ce que je peux en louer un?
+    </button>
+    <div class="faq_reponse">
+        <p>En général, les datacenter ne sont disponible qu'aux entreprises, les institutions financières, 
+            les établissements scolaires et les réseaux sociaux, tel que Facebook et Twitter. Les individus 
+            en font partie en partageant leur données, mais ne peuvent pas y accéder en temps normal.
+        </p>
+    </div>
+
+<br> <!--5-->
+<br>
+<br>
+
+    <script>
+        var btn = document.getElementsByClassName("faq");
+        var i;
+        for (i = 0; i < btn.length; i++)
+            { 
+             btn[i].addEventListener("click", function()
+                    {
+            this.classList.toggle("active")
+            var faq_reponse = this.nextElementSibling;
+            if (faq_reponse.style.display === "block")    {
+                                                    faq_reponse.style.display = "none";
+                                                    }
+            else {
+                faq_reponse.style.display = "block";
+                }
+        });
+                }
+    </script>
+
+</main>
+
+<button onclick="topFunction()" id="AllerEnHaut" title="Retourner en haut">⬆</button>
+
+<footer class="footer">
+    <div class="footer-text">
+        <a href="plan.html">Plan de site</a>
+        <a href="mailto:joshua.gallant.cuevas@gmail.com">Contactez-nous</a>
+        <a class="active" href="#">F.A.Q.</a>
+        <a href="sites.html">Sites d'intérêt</a>
+        <a href="apropos.html">À propos</a>
+        <a href="https://www.linkedin.com/in/jay-gc-aba82b232/" target="_blank">
+            <img src="../images/soc_icons/icons8-linkedin-circled-64.png">
+        </a>
+        <a href="https://twitter.com/JGC80516934" target="_blank">
+            <img src="../images/soc_icons/icons8-twitter-circled-64.png">
+        </a>
+        <a href="https://facebook.com" target="_blank">
+            <img src="../images/soc_icons/icons8-facebook-circled-64.png">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
